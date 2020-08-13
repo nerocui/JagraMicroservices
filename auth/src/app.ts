@@ -3,8 +3,7 @@ import  'express-async-errors';
 import { json } from 'body-parser';
 import { signinRouter } from './routes/signin';
 import { signupRouter } from './routes/signup';
-import { errorHandler } from './middlewares/error-handler';
-import { NotFoundError } from './errors/not-found-error';
+import { errorHandler, NotFoundError } from '@jagra_task_manager/common';
 
 const app = express();
 app.use(json());
